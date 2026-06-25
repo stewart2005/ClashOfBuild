@@ -1,0 +1,119 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    padding: 40px 20px;
+    background-color: rgba(50, 50, 50, 0.6);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    width: 80%;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+#check-menu,
+.hamburguer {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "ClashFont", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--color-madera);
+    padding: 10px 20px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px #000;
+    transition: 0.2s;
+}
+
+.menu li a:hover {
+    background-color: var(--color-madera-clara);
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px #000;
+}
+
+@media (max-width:799px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: 100px;
+        min-width: 330px;
+    }
+
+    header .dropdown {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-bottom: 0 solid rgba(0, 0, 0, 0.3);
+        padding: 0 20px;
+        z-index: 999;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+
+    header .dropdown .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        width: 100%;
+    }
+
+    header .dropdown .menu li {
+        width: auto;
+    }
+
+    header .dropdown .menu li a {
+        display: inline-block;
+        text-align: right;
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        width: 80%;
+        max-width: 350px;
+        margin: 0;
+    }
+
+    .hamburguer {
+        display: block;
+        font-size: 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #check-menu:checked~.dropdown {
+        max-height: 300px;
+        padding: 20px;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+    }
+
+}

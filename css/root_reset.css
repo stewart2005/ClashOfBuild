@@ -1,0 +1,42 @@
+:root {
+    --color-cesped: #4e9436;
+    --color-madera: #5d3a1a;
+    --color-madera-clara: #8b5a2b;
+    --color-pergamino: #f4e4bc;
+    --color-boton: #ff9900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    margin-top: 210px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    transition: margin-top .5s ease-in-out;
+}
+
+@media (max-width:799px) {
+
+    main {
+        margin-top: 125px;
+        min-width: 330px;
+    }
+}

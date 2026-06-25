@@ -1,0 +1,136 @@
+body {
+    background-image: url(../img/background.webp);
+}
+
+main {
+    align-items: center;
+}
+
+.jumbotron-selector {
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 15px 0 rgba(0, 0, 0, 0.4);
+    border: 5px solid #5d3a1a;
+    outline: 3px solid #3d2610;
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.jumbotron-selector h2 {
+    font-family: "ClashFont", sans-serif;
+    color: #ffcc00;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0 #000;
+    text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000,
+        0px 8px 0px #000;
+    margin-bottom: 20px;
+}
+
+.jumbotron-selector p {
+    color: #f0f0f0;
+    border: 1px #000;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+.th-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 5px;
+    padding: 5px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.th-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 3px solid #5d3a1a;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.th-card:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 0, 0, 0.6);
+    border-color: #ffcc00;
+}
+
+.th-card img {
+    width: 100%;
+    max-width: 120px;
+    height: 70%;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.btn-th {
+    font-family: "ClashFont", sans-serif;
+    background-color: #4caf50;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        0px 4px 0px #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #2e7d32;
+    transition: 0.3s ease;
+}
+
+.btn-th:hover {
+    background-color: #68d36c;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        0px 1px 0px #000;
+}
+
+
+
+/*s
+    ===============
+    MEDIA RESPOSIVE
+    ===============
+    */
+
+@media (max-width:799px) {
+
+    .jumbotron-selector {
+        padding: 20px 0;
+    }
+
+    .th-grid {
+        padding: 0;
+        width: 95%;
+        grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    }
+
+    .th-card {
+        padding: 5px;
+    }
+
+}

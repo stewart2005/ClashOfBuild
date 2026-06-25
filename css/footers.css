@@ -1,0 +1,37 @@
+footer {
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.6);
+    border-top: 5px solid rgba(0, 0, 0, 0.3);
+    margin-top: 25px;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-content p {
+    font-family: "ClashFont", sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.links {
+    color: #ffcc00;
+}
+
+.links:hover {
+    color: white;
+    text-shadow: 0 0 5px #ffcc00;
+}
+
+.social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+    text-shadow: 0 0 5px #ffcc00;
+}

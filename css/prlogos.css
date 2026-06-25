@@ -1,0 +1,41 @@
+.container_logos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_logos .logo_txt {
+    font-family: "ClashFont", sans-serif;
+    font-size: 5rem;
+    color: #ffcc00;
+    padding: 25px;
+    list-style: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #000;
+    text-shadow:
+        0px 2px 0px #000,
+        0px 4px 0px #000,
+        0px 6px 0px #000,
+        0px 8px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.logo-text {
+    font-family: 'ClashFont', sans-serif;
+    font-size: 2.5rem;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffcc00;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    letter-spacing: 3px;
+    text-shadow:
+        4px 4px 0px #000,
+        6px 0px 0px #000,
+        6px 4px 0px #000;
+        
+}
